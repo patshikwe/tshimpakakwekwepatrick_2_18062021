@@ -137,8 +137,8 @@ a {
 }
 #hebergeMarseille{
     background-color: #F2F2F2;
-    flex-grow: 2; 
-    height: 650px;
+    width: 900px; 
+    height: 700px;
     margin-right: 20px;
     border-radius: 10px;
     padding-left: 20px;
@@ -153,25 +153,21 @@ a {
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.articleBloc1{
+.articleBloc{
     background-color: white;
-    width: 25%;
+    width: 30%;
     height: auto;
     border-radius: 20px;
-    border-width: 5px;
 }
     /* Bloc2 */
 .bloc2heberge{
     display: flex;
     justify-content: space-between;
 }
-.articleBloc2{
-    background-color: white;
-    width: 25%;
-    height: auto;
-    border-radius: 20px;
-}
    /* Infoheberge et afficherplus */
+.containerH{
+    padding: 5px;
+}
 .infoheberge{
     width: 90%;
     padding-left: 10%;
@@ -181,31 +177,44 @@ a {
     font-weight: bold;
     display: flex;
     align-items: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
    /*  image Hébergement  */
 .imgheberge{
     background-position: center;
     border-radius: 15px 15px 0 0;
 }
-   /*  les populaires   */
+   /* ------ les populaires ------  */
 #populaire{
     background-color: #F2F2F2;
-    flex-grow: 1;
-    height: 650px;
+    width: 405px;
+    height: 700px;
     margin-left: 20px;
     border-radius: 10px;
     padding-left: 20px;
     padding-right: 20px;
 }
+.totalpopulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .articlePopulaire{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
 }
 .containerP{
-    width: 49%;
+    width:50% ;
+    height: auto;
+    padding: 5px;
 }
 .infopopulaire{
-    width: 49%;
+    width: 50%;
+    height: auto; 
 }
 .titrepopulaire{
     display: flex;
@@ -216,7 +225,7 @@ a {
     align-items: center;
 }
 
-.imgpopulaire{
+.imgPopulaire{
     background-position: center;
     border-radius: 15px 0 0 15px;
 }
@@ -229,6 +238,9 @@ a {
 }
 .star{
     height: 30px;
+}
+.starPopu{
+    padding-top: 15px;
 }
 /* ------------------Activity------------------------------- */
 #activity{
