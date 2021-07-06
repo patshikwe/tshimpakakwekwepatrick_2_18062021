@@ -164,7 +164,7 @@ a {
     display: flex;
     justify-content: space-between;
 }
-   /* Infoheberge et afficherplus */
+   /* containerH, infoheberge et afficherplus */
 .containerH{
     padding: 5px;
 }
@@ -182,10 +182,11 @@ a {
 }
    /*  image Hébergement  */
 .imgheberge{
+    object-fit: cover;
     background-position: center;
     border-radius: 15px 15px 0 0;
 }
-   /* ------ les populaires ------  */
+   /* ------ les plus populaires ------  */
 #populaire{
     background-color: #F2F2F2;
     width: 405px;
@@ -198,23 +199,24 @@ a {
 .totalpopulaire{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 .articlePopulaire{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background-color: white;
     border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 .containerP{
-    width:50% ;
+    width: 45%;
     height: auto;
     padding: 5px;
 }
 .infopopulaire{
     width: 50%;
     height: auto; 
+    padding-left: 10px;
 }
 .titrepopulaire{
     display: flex;
@@ -226,6 +228,7 @@ a {
 }
 
 .imgPopulaire{
+    object-fit: cover;
     background-position: center;
     border-radius: 15px 0 0 15px;
 }
@@ -275,6 +278,7 @@ a {
     box-shadow: 5px 5px 5px 1px #F2F2F2 ;
 }
 .activityPhoto{
+    object-fit: cover;
     background-position: center;
     border-radius: 15px 15px 0 0;
 }
