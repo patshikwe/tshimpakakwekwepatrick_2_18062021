@@ -202,11 +202,14 @@ a {
 }
 .articlePopulaire{
     display: flex;
-    flex-direction: row;
     background-color: white;
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 15px;
+}
+.linkPopulaire{
+    display: flex;
+    flex-direction: row;
 }
 .containerP{
     width: 45%;
