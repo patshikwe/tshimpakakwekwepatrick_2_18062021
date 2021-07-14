@@ -396,3 +396,52 @@
         .footerlink:hover {
             text-decoration: underline;
         }
+
+ /* -------------Media Queries------------------ */
+ @media screen and (max-width: 680px) 
+ {
+    #heberge {
+        flex-direction: column-reverse;
+    }
+
+        #hebergeMarseille {
+            width: auto;
+            height: auto;
+        }
+
+            .bloc1heberge {
+                display: block;
+            }
+
+            .bloc2heberge {
+                display: block;
+            }
+
+            .articleBloc {
+                width: 90%;
+                height: auto;
+            }
+
+    .globalblocActivity {
+        display: block;
+    }
+
+        .blocActivity {
+            display: block;
+            width: auto;
+            height: auto;
+        }
+        
+        .activitybig {
+            width: 90%;
+        }
+
+        .blocActivityduo {
+            width: 90%;
+        }
+
+    .divfooter {
+        flex-direction: column;
+        padding: 0 0 20px 25px;
+    }
+ }  
