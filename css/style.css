@@ -29,23 +29,36 @@
         width: 100px;
     }
 
-    .navlinks ul {
-        margin: 0;
-        padding: 0;
+    .navlinks {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 35%;
+        height: 100px;
+    }
+
+    .navlinksHeberge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        height: 99px;
+        border-top: 1px solid #0065FC;
     }
 
     .navlinks li {
         list-style: none;
     }
 
-    .navlinks li a {
-        display: block;
-        padding: 10px;
+    .navLinksli, .lienIscrire {
         color:  #0065FC;
     }
 
-    .navLinksli:hover {
+    .navLinksliActiv {
+        color: black;
+    } 
+
+    .navlinks a:hover {
         background-color: #DEEBFF;
     }
 
@@ -57,6 +70,10 @@
     padding-right: 25px;
 }
 
+    .search {
+        display: flex;
+        flex-direction: column;
+    }
     .searchbar {
     display: flex;
     width: 400px;
@@ -302,8 +319,8 @@
 #activity {
     display: flex;
     flex-direction: column;
+    height: 750px;
     margin-top: 50px;
-    margin-bottom: 50px;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -311,6 +328,7 @@
     .globalblocActivity {
         display: flex;
         justify-content: space-between;
+        height: 650px;
     }
         .blocActivity {
             display: flex;
@@ -380,22 +398,24 @@
 /*-------------Footer---------------- */
 #footer {
     display: flex;
-    justify-content: space-around;
-    background-color: #F2F2F2;  
+    justify-content: center;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: auto; 
 }
 
     .divfooter {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        width: 80%;
         padding-bottom: 20px;
-        margin-right: 300px; 
+        margin-right: 200px; 
     }
 
-        .apropos, .loge, .assiste{
-            display: flex;
-            flex-direction: column;
-            margin-right: 150px;    
+        .apropos, .loge, .assiste {
+        display: flex;
+        flex-direction: column;
         }
 
         .footerlink {
@@ -411,12 +431,17 @@
  @media screen and (max-width: 680px) 
  {
      .header {
-         width: auto;
+         width: 68%;
      }
 
         .navHeader {
             flex-direction: column;
             align-items:baseline ;
+        }
+
+        .navlinksHeberge {
+            border-bottom: 1px solid #0065FC;
+            border-top: none;
         }
 
         .navlinksActivity {
@@ -432,6 +457,16 @@
         .lienIscrire {
             position: absolute;
             top: 0;
+            padding-top: 20px;
+        }
+
+        .searchbar {
+            justify-content: center;
+            width: 100%;
+        }
+
+        .rechercher {
+            width: 30%;
         }
 
     #heberge {
@@ -450,7 +485,7 @@
         }
 
             .titreHeberge {
-                margin-left: 30px;
+                margin-left: 50px;
             }
 
             .bloc1heberge {
@@ -460,6 +495,7 @@
                 width: 100%;
                 justify-content: center;
                 align-items: center;
+                margin-bottom: 20px;
             }
 
             .bloc2heberge {
@@ -473,13 +509,13 @@
 
             .articleBloc {
                 width: 80%;
-                height: auto;
+                height: 250px;
                 margin-bottom: 5%;
                 box-shadow: 5px 5px 5px 7px #F2F2F2;   
             }
 
             .afficherplus{
-                margin-left: 30px;
+                margin-left: 40px;
                 padding: 20px 0 0 0;
             }
 
@@ -490,8 +526,8 @@
         }
 
             .titrepopulaire {
-                width: 90%;
-                padding: 0 15px 0 20px
+                width: 100%;
+                justify-content: space-around;
             }
 
             .totalpopulaire{
@@ -503,34 +539,33 @@
                 margin-left: 20px;
             } 
             
-
     #activity {
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        height: 100%;
+        height: 1800px;
         padding: 0;
     }
 
         .titreActivity {
-            margin-left: 20px;
+            margin-left: 40px;
         }
 
         .globalblocActivity {
             flex-direction: column;
             width: 100%;
+            height: 1720px;
         }
 
             .blocActivity {
                 flex-direction: column;
                 width: 100%;
-                height: auto;
+                height: 50%;
                 align-items: center;
             }
             
             .activitybig {
                 width: 80%;
-                /* margin-left: 20px; */
+                height: 250px;
+                margin-top: 25px;
             }
 
             .activityPhoto1 {
@@ -540,11 +575,13 @@
             .blocActivityduo {
                 width: 100%;
                 align-items: center;
+
             }
 
             .activitysmall {
                 width: 80%;
-                /* margin-left: 20px; */
+                height: 250px;
+                margin-bottom: 28px;
             }
 
             .activityPhoto2 {
