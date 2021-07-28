@@ -40,17 +40,23 @@
     .navlinksHeberge {
         display: flex;
         align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        height: 100px;
+    }
+
+    .navLinksli {
+        display: flex;
         justify-content: center;
-        width: 130px;
-        height: 99px;
-        border-top: 1px solid #0065FC;
+        align-items: center;
+        color: #0065FC;
+        font-weight: bold;
+        width: 55%;
+        height: 97px;
+        border-top: 3px solid #0065FC;
     }
 
-    .navlinks li {
-        list-style: none;
-    }
-
-    .navLinksli, .lienIscrire {
+    .lienIscrire {
         color:  #0065FC;
         font-weight: bold;
     }
@@ -98,12 +104,19 @@
         font-weight: bold;
     }
 
-    .rechercher {
+    .research {
         display: flex;
         align-items: center;
+        align-content: center;
+        width: 25%;
         background-color: #0065FC;
         color: white;
         border-radius: 0px 15px 15px 0;
+
+    }
+
+    .search2 {
+        display: none;
     }
 
     /*  Filtre  */
@@ -446,7 +459,7 @@
         .navHeader {
             flex-direction: column;
             align-items:baseline ;
-            border-bottom: 2px solid #F2F2F2;
+            border-bottom: 3px solid #F2F2F2;
         }
 
         .navLogo {
@@ -454,12 +467,18 @@
         }
 
         .navlinks {
-            border-bottom: 2px solid #0065FC;
+            width: 100%;
         }
 
         .navlinksHeberge {
+           width: 100%; 
+           justify-content: space-between;
+        } 
+
+        .navLinksli {
+            width: 60%;
+            border-bottom: 3px solid #0065FC;
             border-top: none;
-            margin-left: 40px;
         }
 
         .navlinksActivity {
@@ -467,15 +486,15 @@
         }
 
         .inscrire {
-            width: 50%;
+            width: 20%;
             float: left;
             margin: 0;
         }
 
         .lienIscrire {
             position: absolute;
-            top: 0;
-            padding-top: 20px;
+            top: 20px;
+            right: 20px;
         }
 
         .searchbar {
@@ -483,8 +502,20 @@
             width: 100%;
         }
 
-        .rechercher {
-            width: 30%;
+        .research {
+            width: 12%;
+        }
+
+        .search1 {
+            display: none;
+        }
+ 
+        .search2 {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+         width: 100%;
         }
 
         .DivFiltre {
@@ -494,6 +525,10 @@
 
         .twoFiltre {
             flex-direction: column;
+        }
+
+        .itFiltre {
+            margin-top: 20px;
         }
         
     #heberge {
@@ -628,9 +663,9 @@
  }  
 
 /* --- Media queries Tablet ---- */
-@media screen and (min-width: 681px) and (max-width: 1024px) {
+@media screen and (min-width: 681px) and (max-width: 1225px) {
     body {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     .header {
@@ -645,31 +680,30 @@
         }
 
             .navLogo {
-                margin-left: 20px;
-                margin-left: 72px;
-                width: 50%;
-                }   
+                margin-left: 10px;
+            }   
 
             .reservia {
-                width: 150px;
+                width: 120px;
             }
 
             .navlinks {
-                border-bottom: 2px solid #0065FC;
-                width: 50%;
+                width: 100%;
             }
 
             .navlinksHeberge {
+                width: 100%; 
+                justify-content: space-between;
+             } 
+     
+            .navLinksli {
+                width: 60%;
+                border-bottom: 3px solid #0065FC;
                 border-top: none;
-                margin-left: 226px;
-            }
-
-            .navlinksActivity {
-                margin-left: 186px;
             }
 
             .inscrire {
-                width: 50%;
+                width: 20%;
                 float: left;
                 margin: 0;
             }
@@ -688,8 +722,20 @@
            width: 100%;
        }
 
-       .rechercher {
-           width: 30%;
+       .research {
+           width: 7%;
+       }
+
+       .search1 {
+           display: none;
+       }
+
+       .search2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
        }
 
        .DivFiltre {
@@ -703,6 +749,10 @@
        .filtre {
            display: flex;
            align-items: center;
+       }
+
+       .itFiltre {
+        margin-top: 20px;
        }
 
        .infologe {
