@@ -66,7 +66,7 @@
     } 
 
     .navlinks a:hover {
-        background-color: #DEEBFF;
+        font-style: italic;
     }
 
 /* ----------Search et Filtre------------------------ */
