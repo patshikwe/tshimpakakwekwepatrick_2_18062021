@@ -212,10 +212,10 @@
     }
 
        /* Bloc1 */
-        .bloc1heberge {
+        .blocHeberge {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
-            margin-bottom: 20px;
         }
 
         .articleBloc {
@@ -225,10 +225,16 @@
             border-radius: 20px;
         }
 
-            /* Bloc2 */
-        .bloc2heberge {
-            display: flex;
-            justify-content: space-between;
+        .articleBloc:nth-child(4) {
+            margin-top: 20px;
+        }
+
+        .articleBloc:nth-child(5) {
+            margin-top: 20px;
+        }
+
+        .articleBloc:nth-child(6) {
+            margin-top: 20px;
         }
 
         /* containerH, infoheberge et afficherplus */
@@ -286,7 +292,6 @@
 
         .linkPopulaire {
             display: flex;
-            flex-direction: row;
         }
 
         .containerP {
@@ -550,27 +555,18 @@
                 margin-left: 25px;
             }
 
-            .bloc1heberge {
+            .blocHeberge {
                 flex-direction: column;
-                height: 800px;
+                flex-wrap: nowrap;
+                height: auto;
                 width: 100%;
                 justify-content: center;
                 align-items: center;
                 margin-bottom: 20px;
             }
 
-            .bloc2heberge {
-                flex-direction: column;
-                margin: 0;
-                height: 800px;
-                width: 100%;
-                justify-content: center;
-                align-items: center;
-            }
-
             .articleBloc {
                 width: 90%;
-                height: 250px;
                 margin-bottom: 5%;
                 box-shadow: 5px 5px 5px 7px #F2F2F2;   
             }
@@ -768,7 +764,7 @@
 
        #hebergeMarseille {
            width: 100%;
-           height: 4160px;
+           height: auto;
            padding: 0;
            margin: 0;
            background-color: white;
@@ -778,19 +774,10 @@
                margin-left: 50px;
            }
 
-           .bloc1heberge {
+           .blocHeberge {
                flex-direction: column;
-               height: 49%;
-               width: 100%;
-               justify-content: center;
-               align-items: center;
-               margin-bottom: -58px;
-           }
-
-           .bloc2heberge {
-               flex-direction: column;
-               margin: 0;
-               height: 49%;
+               flex-wrap: nowrap;
+               height: auto;
                width: 100%;
                justify-content: center;
                align-items: center;
@@ -798,7 +785,6 @@
 
            .articleBloc {
                width: 90%;
-               height: 30%;
                margin-bottom: 5%;
                box-shadow: 5px 5px 5px 7px #F2F2F2;   
            }
@@ -808,7 +794,7 @@
            }
 
            .imgheberge {
-            height: 329px;
+            height: 271px;
            }
 
            .afficherplus{
@@ -818,9 +804,9 @@
 
        #populaire {
            margin: 0;
-           padding: 0;
+           padding: 0 0 20px 0;
            width: 100%;
-           height: 1035px;
+           height: auto;
        }
 
            .titrepopulaire {
