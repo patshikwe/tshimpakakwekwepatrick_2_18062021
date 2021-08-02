@@ -82,6 +82,7 @@
         flex-direction: column;
     }
     .searchbar {
+
     display: flex;
     width: 400px;
     }
@@ -102,6 +103,7 @@
         font-size: 18px;
         color: black;
         font-weight: bold;
+        border: 1px solid #efe0e085;
     }
 
     .research {
@@ -200,7 +202,7 @@
 
     #hebergeMarseille {
         background-color: #F2F2F2;
-        width: 900px; 
+        width: 70%; 
         height: 700px;
         margin-right: 20px;
         border-radius: 10px;
@@ -223,8 +225,8 @@
             width: 30%;
             height: auto;
             border-radius: 20px;
+            box-shadow:1px 5px 5px 5px #d6dad085;
         }
-
         .articleBloc:nth-child(4) {
             margin-top: 20px;
         }
@@ -239,7 +241,7 @@
 
         /* containerH, infoheberge et afficherplus */
         .containerH {
-            padding: 5px;
+            padding: 5px 5px 0px 5px;
         }
 
         .infoheberge {
@@ -268,7 +270,7 @@
    /* ------ les plus populaires ------  */
 #populaire {
     background-color: #F2F2F2;
-    width: 405px;
+    width: 30%;
     height: 700px;
     margin-left: 20px;
     border-radius: 10px;
@@ -288,6 +290,7 @@
         display: flex;
         background-color: white;
         border-radius: 20px;
+        box-shadow: 1px 5px 5px 5px #d6dad085;
     }
 
         .linkPopulaire {
@@ -366,7 +369,7 @@
         .activitybig {
             width: 50%;
             border-radius: 15px;
-            box-shadow: 5px 5px 5px 1px #F2F2F2 ;
+            box-shadow: 1px 5px 5px 5px #f2f2f2; ;
         }
 
         .blocActivityduo {
@@ -378,7 +381,7 @@
 
         .activitysmall {
             border-radius: 15px;
-            box-shadow: 5px 5px 5px 1px #F2F2F2 ;
+            box-shadow: 1px 5px 5px 5px #f2f2f2; ;
         }
 
         .activityPhoto1 {
@@ -505,10 +508,17 @@
         .searchbar {
             justify-content: center;
             width: 100%;
+            border: 1px solid #efe0e085;
+            border-radius: 20px;
         }
 
+        .placeholder {
+            width: 80%;
+            border: 1px solid #efe0e085;
+        }
         .research {
             width: 12%;
+            border-radius: 15px;
         }
 
         .search1 {
@@ -534,6 +544,10 @@
 
         .itFiltre {
             margin-top: 20px;
+        }
+
+        .twoFiltre .itFiltre:nth-child(1) {
+            width: 70%;
         }
         
     #heberge {
@@ -567,8 +581,7 @@
 
             .articleBloc {
                 width: 90%;
-                margin-bottom: 5%;
-                box-shadow: 5px 5px 5px 7px #F2F2F2;   
+                margin-bottom: 5%;   
             }
 
             .afficherplus{
@@ -598,8 +611,8 @@
                 align-items: center;
             }
             .articlePopulaire {
-                margin-top: 0;
                 width: 90%;
+                margin-top: 0;
             } 
             
     #activity {
@@ -660,10 +673,7 @@
 
 /* --- Media queries Tablet ---- */
 @media screen and (min-width: 681px) and (max-width: 1225px) {
-    body {
-        font-size: 2.5vw;
-    }
-
+   
     .header {
         width: 100%;
         padding: 0;
@@ -676,12 +686,8 @@
         }
 
             .navLogo {
-                margin-left: 10px;
+                margin-left: 7%;
             }   
-
-            .reservia {
-                width: 120px;
-            }
 
             .navlinks {
                 width: 100%;
@@ -711,36 +717,9 @@
             }
     .searSection {
         width: 91%;
+        margin-left: 8%;
+        padding: 0;
     }
-
-       .searchbar {
-           justify-content: center;
-           width: 100%;
-       }
-
-       .research {
-           width: 7%;
-       }
-
-       .search1 {
-           display: none;
-       }
-
-       .search2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-       }
-
-       .DivFiltre {
-           flex-direction: column;
-           align-items: baseline;
-       }
-       .twoFiltre {
-           flex-direction: column;
-       }
 
        .filtre {
            display: flex;
@@ -752,7 +731,7 @@
        }
 
        .infologe {
-        margin-top: 23px;
+           margin-top: 1%;
        }
 
    #heberge {
@@ -771,7 +750,7 @@
        }
 
            .titreHeberge {
-               margin-left: 50px;
+               margin-left: 10%;
            }
 
            .blocHeberge {
@@ -784,9 +763,8 @@
            }
 
            .articleBloc {
-               width: 90%;
-               margin-bottom: 5%;
-               box-shadow: 5px 5px 5px 7px #F2F2F2;   
+               width: 80%;
+               margin-bottom: 5%;   
            }
 
            .containerH {
@@ -797,9 +775,13 @@
             height: 271px;
            }
 
+           .star {
+               margin-bottom: 2%;
+           }
+
            .afficherplus{
                padding: 25px 0 0 0;
-               margin-left: 47px;
+               margin-left: 10%;
            }
 
        #populaire {
@@ -814,11 +796,11 @@
            }
 
            .h2populaire {
-               margin-left: 48px;
+               margin-left: 10%;
            }
 
            .chart {
-               margin-right: 50px;
+               margin-right: 10%;
            }
 
            .totalpopulaire{
@@ -827,7 +809,7 @@
            }
            .articlePopulaire {
                margin-top: 0;
-               width: 90%;
+               width: 80%;
                height: 30%;
            } 
            
@@ -842,7 +824,7 @@
    }
 
        .titreActivity {
-           margin-left: 47px;
+           margin-left: 10%;
        }
 
        .globalblocActivity {
@@ -859,7 +841,7 @@
            }
            
            .activitybig {
-               width: 90%;
+               width: 80%;
                height: 30%;
                margin-top: 25px;
                margin-bottom: 20px;
@@ -884,7 +866,7 @@
            }
 
            .activitysmall {
-               width: 90%;
+               width: 80%;
                height: 30%;
                margin-bottom: 28px;
            }
