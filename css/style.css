@@ -295,6 +295,7 @@
 
         .linkPopulaire {
             display: flex;
+            width: 100%;
         }
 
         .containerP {
