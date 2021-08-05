@@ -251,6 +251,7 @@
         }
 
         .afficherplus {
+            width: 100px;
             color: black;
             font-weight: bold;
             display: flex;
