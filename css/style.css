@@ -224,6 +224,8 @@
             height: auto;
             border-radius: 20px;
             box-shadow:1px 5px 5px 5px #d6dad085;
+            transition: 2s;
+            transition-delay: 1s;
         }
 
         .articleBloc:nth-child(4) {
@@ -426,6 +428,24 @@
             width: 90%;
             padding-left: 10%;
         }
+
+    /* Hover -- Survoler */
+    .articleBloc:hover {
+        width: 35%;
+    }
+
+    .articlePopulaire:hover {
+        font-style: italic;
+        width: 95%;
+    }
+
+    .activitybig:hover {
+        width: 60%;
+    }
+
+    .activitysmall:hover {
+        width: 95%;
+    }
 
 /*-------------Footer---------------- */
 #footer {
@@ -667,6 +687,11 @@
                 margin-bottom: 28px;
             }
 
+        /* Hover --- Survoler */
+        .activitybig:hover {
+            width: 95%;
+        }
+
             /* -- Footer -- */
     #footer {
         width: 100%;
@@ -884,6 +909,11 @@
                height: 30%;
                margin-bottom: 28px;
            }
+
+        /* Hover --- Survoler */
+        .activitybig:hover {
+            width: 95%;
+        }
 
            /* -- Footer -- */
    #footer {
