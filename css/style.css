@@ -46,15 +46,14 @@
         height: 100px;
     }
 
-    .navLinksli {
+    .links {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #0065FC;
+        color: black;
         font-weight: bold;
-        width: 55%;
+        width: 50%;
         height: 97px;
-        border-top: 3px solid #0065FC;
     }
 
     .lienIscrire {
@@ -62,14 +61,16 @@
         font-weight: bold;
     }
 
-    .navLinksliActiv {
-        color: black;
-    } 
-
-    .navlinks a:hover {
-        font-style: italic;
+    .navLinksli:hover {
+        color: #0065FC;
+        border-top: 3px solid #0065FC;
     }
 
+    .navLinksliActiv:hover {
+        color: #0065FC;
+        border-top: 3px solid #0065FC;
+    }
+    
    /* -- Search et Filtre -- */
 .searSection {
     display: flex;
@@ -506,26 +507,22 @@
            justify-content: space-between;
         } 
 
-        .navLinksli {
-            width: 60%;
+        .navLinksli:hover {
+            color: #0065FC;
             border-bottom: 3px solid #0065FC;
             border-top: none;
         }
-
-        .navlinksActivity {
-            margin-left: 60px;
-        }
-
-        .inscrire {
-            width: 20%;
-            float: left;
-            margin: 0;
+    
+        .navLinksliActiv:hover {
+            color: #0065FC;
+            border-bottom: 3px solid #0065FC;
+            border-top: none;
         }
 
         .lienIscrire {
             position: absolute;
             top: 20px;
-            right: 20px;
+            right: 30px;
         }
 
         /* -- Filtre 1 -- */
@@ -611,8 +608,15 @@
             }
 
             .articleBloc {
-                width: 90%;
-                margin-bottom: 5%;   
+                width: 90%;  
+            }
+
+            .articleBloc:nth-child(2) {
+                margin-top: 2em;
+            }
+
+            .articleBloc:nth-child(3) {
+                margin-top: 2em;
             }
 
             .afficherplus{
@@ -730,24 +734,25 @@
             .navlinksHeberge {
                 width: 100%; 
                 justify-content: space-between;
-             } 
-     
-            .navLinksli {
-                width: 60%;
+            } 
+             
+             .navLinksli:hover {
+                color: #0065FC;
                 border-bottom: 3px solid #0065FC;
                 border-top: none;
             }
-
-            .inscrire {
-                width: 20%;
-                float: left;
-                margin: 0;
+        
+            .navLinksliActiv:hover {
+                color: #0065FC;
+                border-bottom: 3px solid #0065FC;
+                border-top: none;
             }
 
             .lienIscrire {
                 position: absolute;
                 top: 0;
                 padding-top: 20px;
+                right: 60px;
             }
 
             /* -- Filtre 1 -- */
@@ -756,6 +761,10 @@
         margin-left: 8%;
         padding: 0;
     }
+
+        .search {
+            width: 85%;
+        }
 
         /* -- Filtre 2 -- */
         .TitreFiltre {
@@ -809,8 +818,15 @@
            }
 
            .articleBloc {
-               width: 80%;
-               margin-bottom: 5%;   
+               width: 80%;  
+           }
+
+           .articleBloc:nth-child(2) {
+            margin-top: 2em;
+           }
+
+           .articleBloc:nth-child(3) {
+                margin-top: 2em;
            }
 
            .containerH {
