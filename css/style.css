@@ -175,11 +175,7 @@
     }
 
     .filtre:hover {
-        color: magenta;
-    }
-
-    .Divicon:hover {
-        background: black;
+        color: #0065FC;
     }
 
     .pluslogements {
