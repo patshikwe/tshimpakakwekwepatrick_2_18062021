@@ -187,14 +187,15 @@
         align-items: center;
     }
 
+         /* classse */
     .size {
         font-size: 12px;
     }
-
+       /* classse */
     .four {
         width: 4em;
     }
-
+       /* Classe */
     .nine {
         width: 9em;
     }
@@ -240,7 +241,7 @@
         .articleBloc {
             background-color: white;
             width: 31%;
-            height: auto;
+            height: 42%;
             border-radius: 20px;
             box-shadow:1px 5px 5px 5px #d6dad085;
         }
@@ -260,6 +261,7 @@
         /* containerH, infoheberge et afficherplus */
         .containerH {
             padding: 5px 5px 0px 5px;
+            height: 46%;
         }
 
         .infoheberge {
@@ -324,7 +326,7 @@
         }
 
         .infopopulaire {
-            width: 50%;
+            width: 58%;
             height: auto; 
             padding-left: 10px;
         }
@@ -358,7 +360,8 @@
     }
 
     .star {
-        height: 30px;
+        height: 28px;
+        padding-bottom: 4px;
     }
 
     .starPopu {
@@ -651,6 +654,10 @@
                 margin-top: 0;
             } 
             
+            .starPopu {
+                padding-top: 4px;
+            }
+
             /* -- Activités -- */
     #activity {
         width: 100%;
