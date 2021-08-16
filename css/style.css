@@ -83,12 +83,13 @@
         display: flex;
         flex-direction: column;
     }
-    .searchbar {
 
+    .searchbar {
     display: flex;
     width: 400px;
     }
 
+      /* ajout classe dans icône (enfant de span .infoMaps) */
     .maps {
         height: 50px;
         width: 50px;
@@ -156,6 +157,7 @@
         display: flex;
     }
 
+        /* ajout classe dans icône (enfant de div .Divicon) */
     .icon {
         border-radius: 20px;
         width: 40px;
@@ -171,7 +173,7 @@
         padding-top: 5px; 
         margin: 6px;
         font-weight: bold;
-        width: 6em;
+        width: 6rem;
     }
 
     .filtre:hover {
@@ -183,19 +185,17 @@
         align-items: center;
     }
 
-         /* classse */
-    .size {
-        font-size: 12px;
-    }
-       /* classse */
+       /* ajout classe dans div filtre: familial */
     .four {
-        width: 4em;
-    }
-       /* Classe */
-    .nine {
-        width: 9em;
+        width: 4rem;
     }
 
+       /* ajout classe dans div filtre: animaux autorisés */
+    .nine {
+        width: 9rem;
+    }
+     
+      /* ajout classe dans icône (enfant de div .pluslogements) */
     .infologe {
         display: flex;
         justify-content: center;
@@ -206,6 +206,7 @@
         width: 25px;
         height: 22px;
         border: 3px solid #F2F2F2;
+        font-size: 12px;
     }
 
     /* -- Hébergements -- */
@@ -346,11 +347,13 @@
             height: 150px;
         }
 
-        /* Stars */
+     /* Stars */
+        /* ajout classe dans icône (enfant de div .star) */
     .etoileBleue {
         color: #0065FC;
     }
 
+        /* ajout classe dans icône (enfant de div .star) */
     .etoileGrise {
         color: #F2F2F2;
     }
@@ -538,7 +541,7 @@
             padding-left: 15px;
         }
         .research {
-            width: 4em;
+            width: 4rem;
             border-radius: 15px;
         }
 
