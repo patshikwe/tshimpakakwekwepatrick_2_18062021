@@ -9,7 +9,7 @@ des activités à Marseille.*
 
 **Langages**
 1. HTML5
-2. CSS
+2. CSS3
 
 **Outils**
 1. Git : système de gestion des versions
